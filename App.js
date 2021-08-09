@@ -8,6 +8,10 @@ import SplashPreregistered from './Src/Controllers/Splash-Preregistered';
 import SplashPhoneOtp from './Src/Controllers/SplashPhoneOtp';
 import NewRegistration from './Src/Controllers/NewRegistration';
 import OrderCategory from './Src/Controllers/OrderCategory';
+import Home from '../GroceryApp/Src/Controllers/Home';
+
+
+
 const Stack = createNativeStackNavigator();
 
 const App = () => {
@@ -32,11 +36,16 @@ const App = () => {
        options={{ headerShown:false}}
          /> */}
          
-         <Stack.Screen name="Order"
+         {/* <Stack.Screen name="Order"
        component={OrderCategory}
        options={{headerShadowVisible:false}}
-         />
+         /> */}
          
+         <Stack.Screen name="Home"
+       component={Home}
+       options={{headerShown:false}}
+         />
+
     </Stack.Navigator>
   </NavigationContainer>
   );
