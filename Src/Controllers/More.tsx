@@ -48,17 +48,19 @@ const More = () => {
                 </View>
             </Card>
 
-            <FlatList style={{backgroundColor:'#FFF',}}
-        
-        data={DATA}
+            <FlatList style={{ backgroundColor: '#FFF', }}
 
-        renderItem={({item}) =><View style={{ width:'95%', height:60 ,margin:1,
-         alignSelf:'center', borderRadius:8, flexDirection:'row', backgroundColor:'#FFF', borderBottomWidth:1, borderColor:'#EEE9E9'  }}>
-            <Image style={{height:24, width:24, justifyContent:'center', margin:10, resizeMode:'contain'}} source={item.image} ></Image>
-           <Text style={{textAlign:'center', fontSize:14,fontWeight:'bold',color:'#37474F', margin:12}}> {item.title} </Text>
-           
-           </View>}
-       />
+                data={DATA}
+
+                renderItem={({ item }) => <View style={{
+                    width: '95%', height: 60, margin: 1,
+                    alignSelf: 'center', borderRadius: 8, flexDirection: 'row', backgroundColor: '#FFF', borderBottomWidth: 1, borderColor: '#EEE9E9'
+                }}>
+                    <Image style={{ height: 24, width: 24, justifyContent: 'center', margin: 10, resizeMode: 'contain' }} source={item.image} ></Image>
+                    <Text style={{ textAlign: 'center', fontSize: 14, fontWeight: 'bold', color: '#37474F', margin: 12 }}> {item.title} </Text>
+
+                </View>}
+            />
 
         </View>
     )
@@ -70,40 +72,41 @@ export default More;
 
 
 
-const DATA = [ {
+
+const DATA = [{
     id: '1',
     title: 'Edit Profile',
     image: require('../Assests/edit_24px.png')
-  },{
+}, {
     id: '2',
     title: 'My Address',
-    image:require('../Assests/place_24px.png')
-  },{
+    image: require('../Assests/place_24px.png')
+}, {
     id: '3',
     title: 'My Order',
-    image:require('../Assests/shopping_basket_24px.png')
-  },{
+    image: require('../Assests/shopping_basket_24px.png')
+}, {
     id: '4',
     title: 'My Wishlist',
-    image:require('../Assests/bolt_24px.png')
-  },{
+    image: require('../Assests/bolt_24px.png')
+}, {
     id: '5',
-    title: 'chat with  us',
-    image:require('../Assests/chat_bubble.png')
-  },{
+    title: 'Chat with  us',
+    image: require('../Assests/chat_bubble.png')
+}, {
     id: '6',
-    title: 'call to us',
-    image:require('../Assests/call_24px.png')
-  },{
+    title: 'Call to us',
+    image: require('../Assests/call_24px.png')
+}, {
     id: '7',
     title: 'Mail to us',
-    image:require('../Assests/Subtract.png')
-  },{
+    image: require('../Assests/email_24px.png')
+}, {
     id: '8',
     title: 'Facebook',
-    image:require('../Assests/facebook_24px.png')
-  },{
+    image: require('../Assests/facebook_24px.png')
+}, {
     id: '9',
     title: 'Logout',
-    image:require('../Assests/logout.png')
-  }]
+    image: require('../Assests/logout.png')
+}]

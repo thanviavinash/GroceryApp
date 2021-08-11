@@ -20,27 +20,26 @@ const OrderCategory = () => {
     <Tab.Navigator initialRouteName="Home"
 
       screenOptions={{
-       tabBarActiveBackgroundColor: '#5EC401',
+        tabBarActiveBackgroundColor: '#5EC401',
         tabBarItemStyle: { height: 40, borderRadius: 50, alignSelf: 'center', marginRight: 15, marginLeft: 15, padding: 33 },
         tabBarStyle: {
           backgroundColor: '#FFF', height: 85,
           borderTopLeftRadius: 15, borderTopRightRadius: 15,
-
         },
 
       }}
     >
       <Tab.Screen
         name="Grocery Plus"
-        
+
         component={HomeController}
         options={{
           tabBarLabel: '',
-          tabBarIcon: ({focused}) => {
+          tabBarIcon: ({ focused }) => {
             return (
               <Image style={{
                 width: 30, height: 30,
-                tintColor:  focused ? '#FFF' :  '#37474F' ,
+                tintColor: focused ? '#FFF' : '#37474F',
               }} source={require('../Assests/home_24px.png')} />
             );
 
@@ -55,11 +54,12 @@ const OrderCategory = () => {
         component={Category}
         options={{
           tabBarLabel: '',
-          tabBarIcon: ({focused}) => {
+          tabBarIcon: ({ focused }) => {
             return (
-              <Image style={{ width: 25, height: 25,
+              <Image style={{
+                width: 25, height: 25,
                 tintColor: focused ? '#FFF' : '#37474F'
-                
+
               }} source={require('../Assests/dashboard_24px.png')} />
             );
           }
@@ -72,9 +72,10 @@ const OrderCategory = () => {
         component={one}
         options={{
           tabBarLabel: '',
-          tabBarIcon: ({focused}) => {
+          tabBarIcon: ({ focused }) => {
             return (
-              <Image style={{ width: 30, height: 30,
+              <Image style={{
+                width: 30, height: 30,
                 tintColor: focused ? '#FFF' : '#37474F'
               }} source={require('../Assests/bag_24px.png')} />
             );
@@ -86,9 +87,10 @@ const OrderCategory = () => {
         component={More}
         options={{
           tabBarLabel: '',
-          tabBarIcon: ({focused}) => {
+          tabBarIcon: ({ focused }) => {
             return (
-              <Image style={{ width: 30, height: 30,
+              <Image style={{
+                width: 30, height: 30,
                 tintColor: focused ? '#FFF' : '#37474F'
               }} source={require('../Assests/menu_24px.png')} />
             );

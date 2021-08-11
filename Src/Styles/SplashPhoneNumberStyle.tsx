@@ -44,7 +44,8 @@ const Styles = StyleSheet.create({
         backgroundColor: '#F0F1F2',
         height: 52,
         width: '90%',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        margin:5 // this style is add for profile screen 
     },
     avatarIcon1: {
         backgroundColor: '#F0F1F2',
